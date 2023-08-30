@@ -1,5 +1,5 @@
 - name: install the Catalogue Microservice
-  hosts: Catalogue
+  hosts: catalogue
   become: yes
   tasks:
   - name: Setup the Node environment
