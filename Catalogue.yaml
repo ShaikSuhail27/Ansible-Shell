@@ -71,7 +71,7 @@
       state: installed
 
   - name: Loading the schema
-    ansible.builtin.command: "mongo --host mongodb.suhaildevops.online </app/schema/catalogue.js"
+    ansible.builtin.command: "mongo --host mongodb.suhaildevops.online < /app/schema/catalogue.js"
 
   - name: Enabling and restarting the service
     ansible.builtin.service:
