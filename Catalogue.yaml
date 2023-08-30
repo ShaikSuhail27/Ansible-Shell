@@ -12,7 +12,7 @@
 
   - name: check whether the user exists or not
     ansible.builtin.command: id roboshop
-      register: USERID
+    register: USERID
 
   - name: Create the User
     ansible.builtin.user:
