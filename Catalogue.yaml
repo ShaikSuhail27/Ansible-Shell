@@ -13,6 +13,7 @@
   - name: check whether the user exists or not
     ansible.builtin.command: id roboshop
     register: USERID
+    ignore_errors: true
 
   - name: Create the User
     ansible.builtin.user:
