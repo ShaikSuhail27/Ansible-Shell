@@ -5,4 +5,4 @@
   - name: Installing the redis repo file
     ansible.builtin.yum:
       name: "https://rpms.remirepo.net/enterprise/remi-release-8.rpm -y"
-      state: present
+      state: installed
