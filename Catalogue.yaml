@@ -54,7 +54,7 @@
   - name: copying the Catalogue service file to system repo
     ansible.builtin.copy:
       src: Catalogue.service
-      dest: etc/systemd/system/catalogue.service
+      dest: /etc/systemd/system/catalogue.service
 
   - name: deamon reload
     ansible.builtin.systemd:
