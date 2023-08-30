@@ -23,7 +23,7 @@
   - name: Check whether the directory exists or not
     ansible.builtin.stat:
       path: /app
-      register: Directory
+    register: Directory
 
   - name: print the directory existance status
     ansible.builtin.debug:
