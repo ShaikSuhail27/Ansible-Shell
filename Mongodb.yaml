@@ -1,5 +1,6 @@
 - name: install the Mongodb server
   hosts: mongodb
+  become: yes
   tasks:
   - name: Copying the Mongodb repo file to yum repository
     ansible.builtin.copy:
