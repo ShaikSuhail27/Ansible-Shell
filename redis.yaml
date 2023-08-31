@@ -6,10 +6,10 @@
     ansible.builtin.yum:
       name: https://rpms.remirepo.net/enterprise/remi-release-8.rpm
       state: installed
-      disable_gpg_check: true
+      disable_gpg_check: true # here we are installing this through ansible remote machine so we need to add it
 
   - name: Enabling the 6.2 version
-    ansible.builtin.command: "yum module enable redis:remi-6.2"
+    ansible.builtin.command: "yum module enable redis:remi-6.2 -y"
   
   - name: install the redis server
     ansible.builtin.yum:
