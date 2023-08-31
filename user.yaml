@@ -26,7 +26,7 @@
     register: Directory
 
   - name: printing the directory existence
-    ansible.builtin.deubug:
+    ansible.builtin.debug:
       msg: "output is {{Directory}}"
 
   - name: Create the App directory
