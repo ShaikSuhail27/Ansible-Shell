@@ -13,6 +13,7 @@
   - name: check whether the User exists or not
     ansible.builtin.command: id roboshop
     register: USERID
+    ignore_errors: true
 
   - name: Create the user
     ansible.builtin.user:
@@ -23,6 +24,10 @@
     ansible.builtin.stat:
       path: /app
     register: Directory
+
+  - name: printing the directory existence
+    ansible.builtin.deubug:
+      msg: "output is {{Directory}}"
 
   - name: Create the App directory
     ansible.builtin.file:
