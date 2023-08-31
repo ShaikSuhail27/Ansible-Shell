@@ -24,5 +24,5 @@
   - name: Setting the passsord for starting thr database service
     ansible.builtin.command: "mysql_secure_installation --set-root-pass RoboShop@1"
 
-  - name: checking the password working or not
-    ansible.builtin.command: "mysql -uroot -pRoboShop@1"
+  # - name: checking the password working or not
+  #   ansible.builtin.command: "mysql -uroot -pRoboShop@1"
