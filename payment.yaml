@@ -36,7 +36,7 @@
     ansible.builtin.file:
       path: /app
       state: directory
-    when Directory.stat.exists == false
+    when: Directory.stat.exists == false
 
   - name: Download the payment package
     ansible.builtin.get_url:
