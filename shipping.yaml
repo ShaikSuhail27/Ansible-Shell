@@ -71,7 +71,7 @@
     ansible.builtin.shell: "mysql -h mysql.suhaildevops.online -uroot -pRoboShop@1 < /app/schema/shipping.sql"
 
   - name: enabling and Starting the service
-    ansible.buitlin.service:
+    ansible.builtin.service:
       name: shipping
       state: started
       enabled: yes
