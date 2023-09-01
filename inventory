@@ -18,3 +18,12 @@ cart.suhaildevops.online
 
 [mysql]
 mysql.suhaildevops.online
+
+[shipping]
+shipping.suhaildevops.online
+
+[rabbitmq]
+rabbitmq.suhaildevops.online
+
+[payment]
+payment.suhaildevops.online
