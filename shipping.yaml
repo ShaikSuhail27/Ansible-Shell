@@ -59,11 +59,11 @@
       dest: /etc/systemd/system/shipping.service
     
   - name: Reload the Service
-    ansible.builtin.systemd
+    ansible.builtin.systemd:
       daemon_reload: yes
   
   - name: Install the mysql client
-    ansible.builtin.yum
+    ansible.builtin.yum:
       name: mysql
       state: installed
   
@@ -71,7 +71,7 @@
     ansible.builtin.shell: "mysql -h mysql.suhaildevops.online -uroot -pRoboShop@1 < /app/schema/shipping.sql"
 
   - name: enabling and Starting the service
-    ansible.buitlin.service
+    ansible.buitlin.service:
       name: shipping
       state: started
       enabled: yes
